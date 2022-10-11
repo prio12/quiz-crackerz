@@ -1,33 +1,26 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
-import Links from "../../Links/Links";
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import { Link } from 'react-router-dom';
 
-const Header = () => {
-    const [open, setOpen] = useState(false);
-    const routes =[
-        {id:1, name:'Topics', path:'/'},
-        {id:2, name:'Statistics', path:'/statistics'},
-        {id:3, name:'Blogs', path:'/blogs'},
-    ]
-  
+function BasicExample() {
   return (
-    <nav className="bg-purple-200 w-full">
-        
-        <div onClick={() =>setOpen(!open)} className="h-6 w-6 md:hidden">
-            {
-                open ? <XMarkIcon></XMarkIcon> : <Bars3Icon></Bars3Icon>
-
-            }
-        </div>
-        <ul className={`bg-purple-200 w-full md:flex justify-center absolute md:static duration-500 ease-in ${open ? 'top-6' : 'top-[-120px]'}`}>
-            {
-                routes.map(route =><Links key={route.id} route={route}></Links>)
-            }
-
-        </ul>
-    </nav>
+    <Navbar bg="light" expand="lg">
+      <Container>
+        <Navbar.Brand href="#home">Web Testy</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ms-auto">
+            <Nav.Item style={{ textDecoration: 'none', margin:'10px' }} as={Link} to='/'>Topics</Nav.Item>
+            <Nav.Item style={{ textDecoration: 'none', margin:'10px' }} as={Link} to='/statistics'>Statistics</Nav.Item>
+            <Nav.Item style={{ textDecoration: 'none', margin:'10px' }} as={Link} to='/blogs'>Blogs</Nav.Item>
+            
+            
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
-};
+}
 
-export default Header;
+export default BasicExample;
