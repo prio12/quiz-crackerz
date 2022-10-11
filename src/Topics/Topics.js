@@ -5,7 +5,7 @@ import './Topics.css'
 
 const Topics = () => {
     const topics = useLoaderData().data;
-    console.log(topics)
+    // console.log(topics)
 
 
     
