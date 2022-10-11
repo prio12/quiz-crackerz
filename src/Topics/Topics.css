@@ -5,3 +5,13 @@
     /* padding: 20px; */
     
 }
+.header {
+    background-color: #FFA07A;
+    color: black;
+    padding: 20px;
+}
+.web-text {
+    color: blue;
+    font-weight: bolder;
+    width: 100%;
+}
