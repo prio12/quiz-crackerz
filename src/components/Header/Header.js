@@ -13,6 +13,7 @@ const Header = () => {
   
   return (
     <nav className="bg-purple-200 w-full">
+        
         <div onClick={() =>setOpen(!open)} className="h-6 w-6 md:hidden">
             {
                 open ? <XMarkIcon></XMarkIcon> : <Bars3Icon></Bars3Icon>
