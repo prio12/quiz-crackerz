@@ -1,14 +1,30 @@
 .quiz {
-    border: 1px solid red;
+    box-shadow: 5px 5px 5px 5px;
     margin: 50px 20px;
+}
+.quiz h5 {
+    color: blue;
+    
+}
+.quiz p{
+    color: magenta;
+    font-weight: bold;
 }
 .quiz img {
     width: 100%;
-    background-color: gray;
+    background-color:salmon;
     padding: 20px;
+    /* border-radius: 8px; */
+    /* border: 2px solid black; */
 
 }
-.quiz-description {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+.btn-text {
+    color: black;
+    font-weight: bold;
+
 }
+.btn-text:hover{
+    color: white;
+}
+
+
