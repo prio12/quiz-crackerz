@@ -1,9 +1,24 @@
 .questions {
-    border: 2px solid red;
-    margin: 50px;
-    background-color: lightblue;
+  background-color: gainsboro;
+  margin-bottom: 50px;
+  padding: 30px;
+  border-radius: 50px;
 }
 .questions h5 {
-    margin: 20px;
+  margin-bottom: 20px;
+  color: blue;
+  font-weight: bold;
+}
+.qs-header {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+.eye-icon {
+    width: 20px;
+}
+.qs-header button {
+    border: none;
+    background-color: gainsboro;
     
 }
