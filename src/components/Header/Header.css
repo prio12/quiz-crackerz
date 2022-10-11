@@ -1,0 +1,11 @@
+.title {
+    font-size: 30px;
+    font-weight: bolder;
+    color: blue;
+}
+.route {
+    text-decoration: none;
+    margin: 10px;
+    color: black;
+    font-weight: bold;
+}
