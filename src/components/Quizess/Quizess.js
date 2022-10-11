@@ -1,11 +1,15 @@
-import React from 'react';
+import React from "react";
+import { useLoaderData } from "react-router-dom";
+import "./Quizees.css";
 
 const Quizess = () => {
-    return (
-        <div>
-            <h1>Quiz section</h1>
-        </div>
-    );
+  const { name, questions } = useLoaderData().data;
+  console.log(name, questions);
+  return (
+    <div>
+      <h4 className="Quiz-title">Quiz of {name}</h4>
+    </div>
+  );
 };
 
 export default Quizess;

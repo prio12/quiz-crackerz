@@ -5,7 +5,7 @@ import './Quiz.css'
 
 const Quiz = ({quiz}) => {
     const {logo, name, id, total} = quiz;
-    console.log(id)
+    // console.log(id)
 
     return (
         <div className='quiz'>
@@ -13,7 +13,8 @@ const Quiz = ({quiz}) => {
             <h5>{name}</h5>
             <div className='quiz-description'>
             <p><small>Total Quiz: {total}</small></p>
-            <Button  className='w-100'  variant="info" ><span className='btn-text'><Link to={`/quizes/${id}`}>Start Quiz</Link> </span></Button>
+            <Link to={`/quizes/${id}`}><Button  className='w-100'  variant="info" ><span className='btn-text'> Start Quiz </span></Button></Link>
+            
             
             </div>
         </div>
