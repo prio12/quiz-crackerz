@@ -1,16 +1,28 @@
 import React from "react";
 import "./Option.css";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-const Option = ({ option, id }) => {
-  // console.log(id)
+const Option = ({ option, id,correctAnswer }) => {
+    const output = () =>{
+        if(correctAnswer === option){
+            toast('YaaYY!!! Correct one')
+        }
+        else{
+            toast('oops!!! Wrong one!! ')
+        }
+    }
+//   console.log(correctAnswer)
   return (
     <div className="option">
      <div>
      <p>
-        <input className="radio-btn" type="radio" value="option" name={id} />{" "}
+        <input onClick={output} className="radio-btn" type="radio" value="option" name={id} />{" "}
         {option}
       </p>
+     
      </div>
+     <ToastContainer />
     </div>
   );
 };

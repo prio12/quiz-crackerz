@@ -20,6 +20,8 @@ function App() {
         },
         {
           path: "/statistics",
+          loader: () => fetch("https://openapi.programming-hero.com/api/quiz"),
+
           element: <Statistics></Statistics>,
         },
         {
@@ -27,18 +29,20 @@ function App() {
           element: <Blog></Blog>,
         },
         {
-          path:'/quizes/:quizId',
-          loader: async({params})=>{
-            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizId}`)
+          path: "/quizes/:quizId",
+          loader: async ({ params }) => {
+            return fetch(
+              `https://openapi.programming-hero.com/api/quiz/${params.quizId}`
+            );
           },
-          element:<Quizess></Quizess>
-        }
+          element: <Quizess></Quizess>,
+        },
       ],
     },
     {
-      path:'*',
-      element:<HandleError></HandleError>
-    }
+      path: "*",
+      element: <HandleError></HandleError>,
+    },
   ]);
   return (
     <div className="App">

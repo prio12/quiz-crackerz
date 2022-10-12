@@ -9,7 +9,7 @@ const Questions = ({questionSmaple}) => {
     // console.log(questionSmaple)
     const {id,question,options,correctAnswer} =questionSmaple;
     // console.log(question,options,correctAnswer)
-    // console.log(id)
+    // console.log(options)
     const notify = (correctAnswer) => toast(correctAnswer);
 
     return (
@@ -24,6 +24,8 @@ const Questions = ({questionSmaple}) => {
                 key={index}
                 option={option}
                 id={id}
+                correctAnswer={correctAnswer}
+
                 ></Option>)
             }
         </div>

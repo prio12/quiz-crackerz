@@ -5,7 +5,7 @@ import "./Quizees.css";
 
 const Quizess = () => {
   const { name, questions } = useLoaderData().data;
-//   console.log(name, questions);
+  // console.log(name, questions);
   return (
     <div>
       <h4 className="Quiz-title">Quiz of {name}</h4>

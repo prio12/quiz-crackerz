@@ -1,0 +1,17 @@
+.blog-section {
+    background-color: bisque;
+}
+.blog-container {
+    background-color: rgba(128, 128, 128,0.5);
+    padding: 50px;
+    box-shadow: 35px 15px 15px 25px;
+}
+.blog-container h5 {
+    color: blue;
+    font-weight: bolder;
+    
+}
+.blog-container p {
+    font-weight: bold;
+    color: black;
+}
