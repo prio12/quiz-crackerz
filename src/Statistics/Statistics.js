@@ -10,9 +10,12 @@ const Statistics = () => {
   return (
     <div className="" >
       <h1>Total Number Of Quizes</h1>
-      <div className="question">
+      {/* <div className="question">
       <div className="question-container">
-      <ResponsiveContainer width="100%" height="100%">
+      
+      </div>
+      </div> */}
+      <ResponsiveContainer className='rechart-container' width="70%" height={300}>
       <LineChart width={500} height={300} data={data}>
       <CartesianGrid strokeDasharray="3 3" />
       <XAxis dataKey="name" />
@@ -22,8 +25,6 @@ const Statistics = () => {
       <Line type="monotone" dataKey="total" stroke="#82ca9d" />
       </LineChart>
       </ResponsiveContainer>
-      </div>
-      </div>
       </div>
   );
 };
