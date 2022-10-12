@@ -18,7 +18,7 @@ const Option = ({ option, id,correctAnswer }) => {
      <div>
      <p>
         <input onClick={output} className="radio-btn" type="radio" value="option" name={id} />{" "}
-        {option}
+        <span className="option-text">{option}</span>
       </p>
      
      </div>

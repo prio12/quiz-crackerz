@@ -1,3 +1,7 @@
 .option {
-    display: flex;  
+    display: flex;
+      
+}
+.option-text{
+    font-weight: bold;
 }

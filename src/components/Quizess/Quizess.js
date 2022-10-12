@@ -8,7 +8,7 @@ const Quizess = () => {
   // console.log(name, questions);
   return (
     <div>
-      <h4 className="Quiz-title">Quiz of {name}</h4>
+      <h4 className="Quiz-title">Quiz of <span className="name">{name}</span></h4>
      <div className="ques">
      {
         questions.map(question =><Questions
