@@ -9,7 +9,7 @@ function BasicExample() {
     <Navbar bg="light" expand="lg">
       <Container>
         <Navbar.Brand>
-          <span className="title">Web Testy</span>
+          <span className="title"><span className="web-text">Web</span> Testy</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

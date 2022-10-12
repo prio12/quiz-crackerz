@@ -5,13 +5,10 @@
     background-color: rgba(128, 128, 128,0.3);
     
 }
-.header {
-    background-color: #FFA07A;
-    color: black;
-    padding: 20px;
-}
-.web-text {
-    color: blue;
+.quiz-title{
     font-weight: bolder;
-    width: 100%;
+    margin-bottom: 50px;
+}
+.quiz-text{
+    color: red;
 }
