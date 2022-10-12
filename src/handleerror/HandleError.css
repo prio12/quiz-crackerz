@@ -21,3 +21,15 @@ body{
     font-weight: bolder;
 }
 
+@media only screen and (max-width: 600px) {
+    .title-container {
+        width: 100%;
+
+    }
+    .title-container h1 {
+        font-size: 2rem;
+
+    }
+    
+   
+  }

@@ -8,15 +8,11 @@ const Statistics = () => {
   const data = useLoaderData().data;
   console.log(data);
   return (
-    <div className="" >
-      <h1>Total Number Of Quizes</h1>
-      {/* <div className="question">
-      <div className="question-container">
-      
-      </div>
-      </div> */}
+    <div  >
+      <h1 className="rechart-header">Total Number Of <span className="quizes-txt">Quizes</span></h1>
+      <div >
       <ResponsiveContainer className='rechart-container' width="70%" height={300}>
-      <LineChart width={500} height={300} data={data}>
+      <LineChart  data={data}>
       <CartesianGrid strokeDasharray="3 3" />
       <XAxis dataKey="name" />
       <YAxis dataKey="total" />
@@ -25,6 +21,7 @@ const Statistics = () => {
       <Line type="monotone" dataKey="total" stroke="#82ca9d" />
       </LineChart>
       </ResponsiveContainer>
+      </div>
       </div>
   );
 };
